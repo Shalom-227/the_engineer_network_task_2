@@ -229,5 +229,128 @@ body {
         }
     }
 }
+.contact-form {
+    background-color: var(--primary-colour);
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-md);
+    margin-bottom: var(--element-spacing-lg);
 
 
+    .contact-heading {
+        
+        color: var(--link-colour);
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    fieldset {
+        margin: 4em 0;
+        padding: 1em 2em;
+        border: solid 1px var(--link-colour);
+        border-radius: 25%;
+        min-width: 200px;
+    }
+    .form-title {
+        font-size: 1em;
+        padding: 0 0.25em;
+        text-align: center;
+    }
+    .form-datum {
+        display: block;
+        margin-top: 1em;
+    }
+    
+    .form-control {
+        padding: 0.5em;
+        color: green;
+        border: solid 1px yellow;
+        font-size: 0.6em;
+    }
+    .form-control {
+            width: 40em;
+        }
+    #message {
+        min-height: 8em;
+        min-width: 100%;
+    }
+    
+    .form-btn {
+        padding: 0.5em 1em;
+        border-radius: 6px;
+        background-color: var(--secondary-colour);
+        color:#fefcf7;
+        font-size: 0.8em;
+
+    }
+
+}
+
+.form-datum span {
+    color: red;
+}
+
+
+.footer-navigation {
+    height: 40vh;
+    background-color: var(--primary-colour);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--element-spacing-md);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+    font-size: var(--font-size-sm);  
+
+}
+
+.social-media{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+    font-size: var(--font-size-sm);
+}
+.social-media li, a{
+        color: var(--link-colour);
+        text-decoration: none;
+        list-style: none;
+        transition: color 0.3s, filter 0.3s ease;
+        padding: 0 1.5rem;
+    }
+
+.footer-links li, a{
+    color: var(--link-colour);
+    text-decoration: none;
+    list-style: none;
+    transition: color 0.3s, filter 0.3s ease;
+    padding: 0 1.5rem;
+}
+
+.footer-links a:hover, .social-media a:hover {
+        color: var(--link-colour-hover);
+        transform: scale(0.5, 0.5);
+        filter: drop-shadow(0.2rem -0.2rem 1rem #FFFD74);
+}
+
+.social-media .social-media-icon {
+    width: 50px;
+    height: 50px;
+
+}
+
+.footer-text {
+    color: var(--secondary-colour);
+    font-size: var(--font-size-sm);
+    text-align: center;
+
+}
