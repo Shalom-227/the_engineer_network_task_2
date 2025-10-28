@@ -51,12 +51,12 @@ Shade: #6a0000
 }
 
 :root {
---navbar-background-color:  #0E2A30;
+--primary-colour:  #0E2A30;
 --nav-bar-height: 40vh;
---link-color: #F3E5AB;
---link-color-hover: #fefcf7;
---primary-color: #4f7942;
---tertiary-color: #ff3501;
+--link-colour: #F3E5AB;
+--link-colour-hover: #fefcf7;
+--secondary-colour: #4f7942;
+--tertiary-colour: #ff3501;
 
 /* --cta-button-color:; */
 
@@ -68,6 +68,9 @@ Shade: #6a0000
 --font-size-xlg: 4.8rem;
 --font-size-xxlg: 6.3rem;
 
+--element-spacing-lg: 10rem;
+--element-spacing-md: 6rem;
+--element-spacing-sm: 3rem;
 
 }
 
@@ -81,7 +84,7 @@ body {
     margin: 0 auto;
     font-family: "Poppins", Montserrat;
     color: #F5FFFA;
-    background-color: #d8dee7;
+    background-color: #fff;
     padding: 0 0.5rem;
     position: relative;
 
@@ -89,7 +92,7 @@ body {
 
 .nav-bar {
     max-height: var(--nav-bar-height);
-    background-color: var(--navbar-background-color);
+    background-color: var(--primary-colour);
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -111,33 +114,30 @@ body {
     gap: 4rem;
     list-style: none;
     align-items: center;
-    font-size: var(--font-size-xsm);
-    
+    font-size: var(--font-size-sm);   
         
     .nav-links li, a{
-        color: var(--link-color);
+        color: var(--link-colour);
         text-decoration: none;
         transition: color 0.3s, filter 0.3s ease;
         padding: 0 1.5rem;  
     }
 }
 .nav-links a:hover {
-        color: var(--link-color-hover);
+        color: var(--link-colour-hover);
         transform: scale(0.5, 0.5);
         filter: drop-shadow(0.2rem -0.2rem 1rem #FFFD74);
 }
 
 .hero-section {
-    
     display: grid;
     grid-template-columns: 90rem 40rem;
-    /* justify-content: center;
-    align-items: center; */
-    background-color: var(--primary-color);
+    background-color: var(--secondary-colour);
     color: #F9F9F9;
     gap: 3rem;
     height: 55vh;
     position: relative;
+    margin-bottom: var(--element-spacing-lg);
 
     
     .hero-text {
@@ -166,29 +166,68 @@ body {
             margin-bottom: 5rem;
             border-style: none;
             border-radius: 25%;
-            color: var(--link-color);
-            background-color: var(--tertiary-color);
+            color: var(--link-colour);
+            background-color: var(--tertiary-colour);
             transition: transform 0.3s, filter 0.3s;
             position: absolute;
             bottom: -1.0rem;
             
-        }        
+        }   
+        .cta-btn:hover {
+            background-color: #fe6f5e;
+            color: var(--link-colour-hover);
+            transform: scale(1.2, 1.2);
+            filter: drop-shadow(0.2rem -0.2rem 0.2rem #FFFD74);
+}     
+    }
+}
+.hero-section img {
+    display: flex;
+    width: 30%;
+    opacity: 0.8;
+    position: absolute;
+    top: 5rem;
+    right: 5.5rem;
+    mix-blend-mode: screen;
+    z-index: 3;
+}
+
+.features-container {
+    background-color: #d8dee7;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: var(--element-spacing-lg);
+
+    .features-heading {
+        font-size: var(--font-size-xlg);
+        color: var(--primary-colour);
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+    .features-section{
+        display: grid;
+        grid-template-columns: repeat(3, 30rem);
+        /* align-items: center; */
+        gap: 10rem;
+
+        .features-card {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--link-colour-hover);
+
+            .card-heading {
+                display: grid;
+                font-size: var(--font-size-lg);
+                color: var(--secondary-colour);
+                padding: 0 2rem;
+            }
+            .card-text {
+                font-size: var(--font-size-sm);
+                color: var(--secondary-colour);
+                text-align: center;
+            }
+        }
     }
 }
 
-.cta-btn:hover {
-    background-color: #fe6f5e;
-    color: var(--link-color-hover);
-    transform: scale(1.2, 1.2);
-    filter: drop-shadow(0.2rem -0.2rem 0.2rem #FFFD74);
-}
 
-.hero-section img {
-                display: flex;
-                width: 30%;
-                opacity: 0.8;
-                position: absolute;
-                top: 6rem;
-                right: 5.5rem;
-                mix-blend-mode: screen;
-            }
