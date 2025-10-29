@@ -92,3 +92,13 @@ function displayCart(){
     }
 
 }
+
+function calculateTotal(){
+    let total = 0;
+    for(let i=0; i<cart.length; i++){
+        let itemTotal = (cart[i].quantity * cart[i].price).toFixed(2);
+        total +=itemTotal;
+    }
+        return total.toFixed(2);
+}
+console.log(`Total Payable Amount: ₦${calculateTotal()}`);
