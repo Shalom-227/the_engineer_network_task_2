@@ -52,7 +52,7 @@ Shade: #6a0000
 
 :root {
 --primary-colour:  #0E2A30;
---nav-bar-height: 40vh;
+--nav-bar-height: 15vh;
 --link-colour: #F3E5AB;
 --link-colour-hover: #fefcf7;
 --secondary-colour: #4f7942;
@@ -93,11 +93,11 @@ body {
 .nav-bar {
     max-height: var(--nav-bar-height);
     background-color: var(--primary-colour);
-    width: 100%;
+    width: 99.3%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top:0;
     bottom:0;
     z-index: 100;
@@ -129,14 +129,23 @@ body {
         filter: drop-shadow(0.2rem -0.2rem 1rem #FFFD74);
 }
 
+.shopping-cart {
+    display: block;
+        width: 3.35rem;
+        height: auto;
+}
+
 .hero-section {
     display: grid;
     grid-template-columns: 90rem 40rem;
     background-color: var(--secondary-colour);
     color: #F9F9F9;
+    height: calc(70vh - var(--nav-bar-height));
     gap: 3rem;
-    height: 55vh;
+    margin-top: 15vh;
     position: relative;
+    right:0;
+    left: 0;
     margin-bottom: var(--element-spacing-lg);
 
     
@@ -193,7 +202,7 @@ body {
 }
 
 .features-container {
-    background-color: #d8dee7;
+    /* background-color: #d8dee7; */
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: var(--element-spacing-lg);
@@ -206,17 +215,20 @@ body {
     }
     .features-section{
         display: grid;
-        grid-template-columns: repeat(3, 30rem);
+        grid-template-columns: repeat(3, 35rem);
         /* align-items: center; */
-        gap: 10rem;
+        gap: 8rem;
 
         .features-card {
             display: flex;
             flex-direction: column;
             background-color: var(--link-colour-hover);
+            height: 614px;
+            border: 0.5rem solid var(--secondary-colour);
+            padding: 0.5rem 0.5rem;
 
             .card-heading {
-                display: grid;
+                /* display: grid; */
                 font-size: var(--font-size-lg);
                 color: var(--secondary-colour);
                 padding: 0 2rem;
@@ -225,6 +237,11 @@ body {
                 font-size: var(--font-size-sm);
                 color: var(--secondary-colour);
                 text-align: center;
+            }
+            .card-image {
+                max-width: 35rem;
+                width: 100%;
+                align-self: center;
             }
         }
     }
