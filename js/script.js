@@ -82,3 +82,13 @@ function removeItemFromCart(id){
     }
     return cart;
 }
+
+function displayCart(){
+    for(let i=0; i<cart.length; i++){
+        let itemName = cart[i].name;
+        let itemQuantity= cart[i].quantity;
+        let itemPrice = cart[i].price;
+        console.log(`You selected [${itemQuantity}] ${itemName} which costs ₦${itemPrice}`);
+    }
+
+}
