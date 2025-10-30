@@ -128,12 +128,21 @@ body {
         transform: scale(0.5, 0.5);
         filter: drop-shadow(0.2rem -0.2rem 1rem #FFFD74);
 }
-
 .shopping-cart {
-    display: block;
-        width: 3.35rem;
-        height: auto;
+    position: relative;
 }
+.shopping-cart img{
+    display: block;
+    width: 3.35rem;
+    height: auto;
+}
+    .shopping-cart span {
+        color: var(--tertiary-colour);
+        position: absolute;
+        left: 3.4rem;
+        bottom: 1.5rem;
+    }
+
 
 .hero-section {
     display: grid;
@@ -233,7 +242,7 @@ body {
                 color: var(--secondary-colour);
                 padding: 0 2rem;
             }
-            .card-text {
+            .card-price {
                 font-size: var(--font-size-sm);
                 color: var(--secondary-colour);
                 text-align: center;
