@@ -76,6 +76,9 @@ let cart = [
     }
 ];
 
+//storage to grants full details of which product is added or removed
+let basket = [];
+
 // function addToCart(item){
 //     cart.push(item);
 //     return cart;
@@ -158,15 +161,36 @@ displayFeatures();
 
 
 // increment and decrement functionality
+let increment = (id) => {
+    
+    let search = basket.find((x)=> x.id === id);
+    if(search ===undefined){
+        basket.push({
+        id: id,
+        item: 1
+        })
+    }else{
+        search.item +=1;
+    }    
+    // console.log(basket);
+    update(id);
+   
+};
 
 let decrement = (id) => {
-    console.log(id);
+    
+     let search = basket.find((x)=> x.id === id);
+     
+     if(search.item === 0 || search === undefined) return;
+        search.item -=1;   
+        // console.log(basket);
+        update(id);
 };
-let increment = (id) => {
-    console.log(id);
-};
-
 
 // update function
 
-let update = () => {};
+let update = (id) => {
+    let search = basket.find((x)=> x.id === id);
+    console.log(search.item);
+    document.getElementById(id).innerHTML = search.item;
+};
