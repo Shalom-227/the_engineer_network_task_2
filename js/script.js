@@ -191,6 +191,14 @@ let decrement = (id) => {
 
 let update = (id) => {
     let search = basket.find((x)=> x.id === id);
-    console.log(search.item);
+    // console.log(search.item);
     document.getElementById(id).innerHTML = search.item;
+    calculateItemNo()
 };
+
+// add cart items
+let calculateItemNo = () => {
+    let cartIcon = document.getElementById("cart-count")
+    cartIcon.innerHTML = basket.map((x) => x.item).reduce((x,y)=>x+y, 0);
+   
+}
