@@ -210,3 +210,24 @@ let calculateItemNo = () => {
 }
 
 calculateItemNo();
+
+
+
+
+
+
+
+// form functionality
+
+const form = document.getElementById("contacts-form");
+const message = document.getElementById("success-alert");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log(e);
+
+    message.style.display="block";
+
+    form.reset();
+
+});

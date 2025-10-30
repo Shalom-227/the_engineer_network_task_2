@@ -371,6 +371,12 @@ body {
     color: red;
 }
 
+#success-alert {
+    display: none;
+    color:var(--tertiary-colour);
+    background-color: var(--link-colour-hover);
+    font-weight: 700;
+}
 
 .footer-navigation {
     height: 40vh;
