@@ -77,7 +77,7 @@ let cart = [
 ];
 
 //storage to grants full details of which product is added or removed
-let basket = [];
+let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 // function addToCart(item){
 //     cart.push(item);
@@ -131,6 +131,7 @@ let displayFeatures =()=>{
 
     return (featureSection.innerHTML= cart.map(x=>{
         let {id, name, quantity, price, img, text} = x;
+        let search = basket.find((x) => x.id === id) || [];
         return`
     <section id=product-id-${id} class="features-section" id="features-section" aria-label="products-list">
                         <article class="features-card" >
@@ -146,7 +147,9 @@ let displayFeatures =()=>{
                                         <img onclick="decrement(${id})" src="./assets/icons/dash-lg.svg">
                                     </li >
                                     <li id=${id} class="quantity">
-                                        <p>0</p>
+                                        <p>
+                                        ${search.item === undefined ? 0: search.item}
+                                        </p>
                                     </li>
                                     <li>
                                         <img  onclick="increment(${id})" src="./assets/icons/plus-lg.svg">
@@ -171,7 +174,8 @@ let increment = (id) => {
         })
     }else{
         search.item +=1;
-    }    
+    }
+    localStorage.setItem("data", JSON.stringify(basket));   
     // console.log(basket);
     update(id);
    
@@ -182,7 +186,8 @@ let decrement = (id) => {
      let search = basket.find((x)=> x.id === id);
      
      if(search.item === 0 || search === undefined) return;
-        search.item -=1;   
+        search.item -=1;  
+        localStorage.setItem("data", JSON.stringify(basket));    
         // console.log(basket);
         update(id);
 };
@@ -202,3 +207,5 @@ let calculateItemNo = () => {
     cartIcon.innerHTML = basket.map((x) => x.item).reduce((x,y)=>x+y, 0);
    
 }
+
+calculateItemNo();
