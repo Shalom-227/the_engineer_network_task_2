@@ -175,9 +175,9 @@ let increment = (id) => {
     }else{
         search.item +=1;
     }
-    localStorage.setItem("data", JSON.stringify(basket));   
     // console.log(basket);
     update(id);
+    localStorage.setItem("data", JSON.stringify(basket));   
    
 };
 
@@ -186,10 +186,11 @@ let decrement = (id) => {
      let search = basket.find((x)=> x.id === id);
      if (search.item === 0) return;
      else if (search.item === 0 || search === undefined) return;
-        search.item -=1;  
-        localStorage.setItem("data", JSON.stringify(basket));    
+        search.item -=1;
+         update(id);
+        basket = basket.filter((x)=> x.item !==0);  
         // console.log(basket);
-        update(id);
+    localStorage.setItem("data", JSON.stringify(basket));  
 };
 
 // update function
