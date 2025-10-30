@@ -4,7 +4,7 @@ let cart = [
         name: "ShabNut Cooking Oil",
         quantity:1,
         price: 10500,
-        img: "../assets/features/ShabNut-Cooking-Oil.png",
+        img: "assets/features/ShabNut-Cooking-Oil.png",
         text: "Cold-pressed excellence — smooth, healthy, and full of natural flavour."
     },
     
@@ -13,7 +13,7 @@ let cart = [
         name: "ShabNut Skincare and Beauty Oil",
         quantity: 1,
         price: 13000,
-        img: "../assets/features/ShabNut-SkinCare.png",
+        img: "assets/features/ShabNut-SkinCare.png",
         text: "Silky smooth, deeply nourishing, beautifully natural."
     },
     {
@@ -21,7 +21,7 @@ let cart = [
         name: "ShabNut Hairlove",
         quantity: 1,
         price: 15000,
-        img: "../assets/features/ShabNut-hairlove.png",
+        img: "assets/features/ShabNut-hairlove.png",
         text:"Deep nourishment that reduces dryness and flakiness, leaving hair soft, strong, and radiant."
     },
     {
@@ -29,7 +29,7 @@ let cart = [
         name: "ShabNut Crunchie",
         quantity: 1,
         price:5000,
-        img: "../assets/features/ShabNut-Crunchie.png",
+        img: "assets/features/ShabNut-Crunchie.png",
         text: "The perfect bite of joy — tasty, crunchy, and full of peanut goodness."
     },
     {
@@ -37,7 +37,7 @@ let cart = [
         name: "ShabNut Spread",
         quantity: 1,
         price:8000,
-        img: "../assets/features/ShabNut-spread.png",
+        img: "assets/features/ShabNut-spread.png",
         text: "Smooth, creamy, and made from 100% natural groundnuts"
     },
     {
@@ -45,7 +45,7 @@ let cart = [
         name: "ShabNut-Classic-Roasted",
         quantity: 1,
         price: 5000,
-        img: "../assets/features/ShabNut-Classic.png",
+        img: "assets/features/ShabNut-Classic.png",
         text: "Purely roasted, locally sourced, and full of natural energy."
     },
     
@@ -54,7 +54,7 @@ let cart = [
         name: "ShabNut Cooking Paste",
         quantity: 1,
         price: 12000,
-        img: "../assets/features/ShabNut-cooking-Paste.png",
+        img: "assets/features/ShabNut-cooking-Paste.png",
         text: "With Natural ingredients, thick and rich — the perfect base for flavourful meals."
     },
 
@@ -63,7 +63,7 @@ let cart = [
         name: "ShabNut Essential Oils",
         quantity: 1,
         price: 5000,
-        img: "../assets/features/ShabNut-essential-oils.png",
+        img: "assets/features/ShabNut-essential-oils.png",
         text:"Naturally pure. Perfectly restorative."
     },
     {
@@ -71,7 +71,7 @@ let cart = [
         name: "ShabNut Household Oils",
         quantity: 1,
         price: 7000,
-        img: "../assets/features/ShabNub-HouseHold-Oils.png",
+        img: "assets/features/ShabNub-HouseHold-Oils.png",
         text: "Pure, natural care for your home — shine wood, soften leather, and prevent rust the gentle way."
     }
 ];
