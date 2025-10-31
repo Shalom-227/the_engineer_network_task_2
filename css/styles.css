@@ -9,7 +9,7 @@ FONT WEIGHT
 400/900
 
 LINE HEIGHT
-1.2/1.5
+1.7/1.5
 
 LETTER SPACING
 0 / -1.90rem
@@ -68,9 +68,9 @@ Shade: #6a0000
 --font-size-xlg: 4.8rem;
 --font-size-xxlg: 6.3rem;
 
---element-spacing-lg: 10rem;
---element-spacing-md: 6rem;
---element-spacing-sm: 3rem;
+--element-spacing-lg: 30rem;
+--element-spacing-md: 20rem;
+--element-spacing-sm: 10rem;
 
 }
 
@@ -93,7 +93,7 @@ body {
     max-height: var(--nav-bar-height);
     background-color: var(--primary-colour);
     max-width: 1200px;
-    width: 100%;
+    width: 95.9%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -149,57 +149,65 @@ body {
 
 .hero-section {
     display: grid;
-    grid-template-columns: 90rem 40rem;
+    grid-template-columns: 60rem 60rem;
+    width: 1200px;
     background-color: var(--secondary-colour);
     color: #F9F9F9;
-    height: calc(50vh - var(--nav-bar-height));
-    gap: 3rem;
-    margin-top: 12vh;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
+    height: calc(53rem - var(--nav-bar-height));
+    gap: 5rem;
+    top: 15vh;
     position: relative;
     right:0;
     left: 0;
     margin-bottom: var(--element-spacing-lg);
     
-
     
     .hero-text {
-        display: flex;
+        display: grid;
+        grid-template-rows: 20rem 15rem 10rem;
         flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        bottom: 20rem;
-        padding-left: 3rem;
+        max-width: 60rem;
+        position: relative;
 
 
         .hero-section-heading {
             font-size: var(--font-size-xxlg);
             margin-left: 3rem;
             line-height: 1.5;
-            position: absolute;
-            top: 20rem;
+            padding-left: 2rem;
+            align-self: center;
+            justify-self: center;
+             color: var(--link-colour);
+
+            .gradient-text{
+                color: var(--link-colour);
+            }
         }
         
         .hero-section-tagline {
             font-size: var(--font-size-md);
             margin-left: 3rem;
-            margin-bottom: 5rem;
-            display: flex;
+            padding-left: 3rem;
+            line-height: 1.5;
+            font-style: italic;
+            align-self: center;
+            justify-self: center;
+            position: absolute;
+            top: 18rem;
         }
         .cta-btn {
             font-size: var(--font-size-sm);
-            max-width: 23rem;
-            padding: 3rem 1.5rem;
-            margin-left: 3rem;
+            max-width: 30rem;
+            padding: 2rem 0.5rem;
+            margin-left: 6rem;
             margin-bottom: 5rem;
             border-style: none;
-            border-radius: 25%;
+            border-radius: 20%;
             color: var(--link-colour);
             background-color: var(--tertiary-colour);
             transition: transform 0.3s, filter 0.3s;
             position: absolute;
-            bottom: -1.0rem;
+            top: 30rem;
             
         }   
         .cta-btn:hover {
@@ -211,16 +219,27 @@ body {
 }     
     }
 }
-.hero-section img {
+
+.hero-image-container {
+    max-width: 50rem;
+    position: relative;
     display: flex;
-    width: 30%;
-    opacity: 0.8;
-    position: absolute;
-    top: 20rem;
-    right: 5.5rem;
-    mix-blend-mode: screen;
-    z-index: 3;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+        width: 95%;
+        opacity: 0.6;
+        mix-blend-mode: screen;
+        position: absolute;
+        top: 3rem;
+        z-index: 3;
+
+    }
+
 }
+
 
 .features-container {
     
@@ -236,14 +255,15 @@ body {
         font-size: var(--font-size-xlg);
         color: var(--primary-colour);
         text-align: center;
+        margin-bottom: var(--element-spacing-md);
         /* padding: 4rem 2rem; */
     }
     .features-section{
         display: grid;
-        grid-template-columns: repeat(3, 35rem);
+        grid-template-columns: repeat(3, 36rem);
         align-items: center;
-        gap: 4rem;
-        margin-bottom: var(--element-spacing-lg);
+        gap: 3rem;
+        margin-bottom: var(--element-spacing-sm);
 
         .features-card {
             /* display: flex; */
@@ -258,38 +278,39 @@ body {
             }
 
             .card-text {
-                 font-size: var(--font-size-md);
+                 font-size: var(--font-size-sm);
                  color: var(--secondary-colour);
-                 border:  solid 0.3rem var(--primary-colour);
+                 border:  solid 0.3rem #a7bca1;
                  padding: 0 1rem;
                  padding-top: 2.2rem;
-                 height: 26rem; /* set height by largest card text container */
+                 height: 18rem; /* set height by largest card text container */
                  line-height: 1.5;
                  
             }
 
             .card-heading {
-                font-size: var(--font-size-lg);
+                font-size: var(--font-size-md);
                 color: var(--secondary-colour);
-                border:  solid 0.3rem var(--primary-colour);
-                height: 12rem; /* set height by largest card heading container */
+                border:  solid 0.3rem #a7bca1;
+                height: 10rem; /* set height by largest card heading container */
                 padding: 0.5rem 1rem;
                 text-align: center;
             }
 
             .price-quantity {
-                 border:  solid 0.3rem var(--primary-colour);
+                 border:  solid 0.3rem #a7bca1;
                  display: grid;
-                 grid-template-columns: 15rem 15rem;
-                 font-size: var(--font-size-md);
+                 grid-template-columns: 10rem 10rem;
+                 font-size: var(--font-size-xsm);
                  justify-content: space-between;
-                 padding: 3rem;
+                 padding: 2rem;
+                 height: 8rem; 
 
             }
             .card-price {
                 
                 color: var(--secondary-colour);
-                font-size: var(--element-spacing-sm);
+                font-size: var(--font-size-sm);
                 /* text-align: center; */
             }
             .card-buttons {
@@ -297,6 +318,10 @@ body {
                 justify-content: space-around;
                 list-style: none;
                 color: var(--tertiary-colour);
+
+                .quantity {
+                    font-size: var(--font-size-sm);
+                }
                 }
 
             .card-buttons img {
@@ -325,65 +350,70 @@ body {
 
 .contact-form {
     background-color: var(--primary-colour);
-    max-width: 1200px;
+    color: var(--link-colour);
+    max-width:500px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    font-size: var(--font-size-md);
-    margin: var(--element-spacing-lg);
-
-    /* justify-content: center; */
-    /* align-items: center; */
-
+    height: 700px;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--element-spacing-md);
 
     .contact-heading {
-        
-        color: var(--link-colour);
+        /* color: var(--link-colour-hover); */
         text-align: center;
-        font-size: 1.3em;
+        font-size: var(--font-size-md);
+        padding: 2rem 1rem;
     }
 
     fieldset {
-        margin: 4em 0;
+        margin: 2em 0;
         padding: 1em 2em;
-        border: solid 1px var(--link-colour);
-        border-radius: 25%;
         min-width: 200px;
+        
     }
     .form-title {
-        font-size: 1em;
+        font-size: 1.5em;
         padding: 0 0.25em;
         text-align: center;
+        text-decoration: none;
+       
     }
     .form-datum {
         display: block;
         margin-top: 1em;
+        font-weight: 400;
     }
     
     .form-control {
         padding: 0.5em;
         color: green;
-        border: solid 1px yellow;
         font-size: 0.6em;
+        width: 25em;
     }
-    .form-control {
-            width: 40em;
-        }
+
+    }
     #message {
-        min-height: 8em;
+        min-height: 10em;
         min-width: 100%;
+        padding-bottom: 10em;
     }
     
+    .btn-container {
+        position: relative;
+
+    }
     .form-btn {
         padding: 0.5em 1em;
         border-radius: 6px;
         background-color: var(--secondary-colour);
         color:#fefcf7;
         font-size: 0.8em;
+        position: absolute;
+        bottom: 0.5px;
+        right: 10px;
 
     }
 
-}
+
 
 .form-datum span {
     color: red;
@@ -397,13 +427,13 @@ body {
 }
 
 .footer-navigation {
-    height: 20vh;
+    height: 45vh;
     background-color: var(--primary-colour);
-   
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--element-spacing-md);
+    padding: 4rem;
+    
 }
 
 .footer-links {
@@ -414,6 +444,7 @@ body {
     align-items: center;
     font-size: var(--font-size-sm);
     justify-content: center; 
+    margin-bottom: 5rem;
 
 }
 
@@ -456,5 +487,6 @@ body {
     color: var(--secondary-colour);
     font-size: var(--font-size-sm);
     text-align: center;
+    font-weight: 400;
 
 }

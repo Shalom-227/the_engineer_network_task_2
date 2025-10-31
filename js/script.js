@@ -10,7 +10,7 @@ let cart = [
     
     {
         id: 2,
-        name: "ShabNut Skincare and Beauty Oil",
+        name: "ShabNut Skincare & Beauty Oil",
         quantity: 1,
         price: 13000,
         img: "assets/features/ShabNut-SkinCare.png",
