@@ -152,9 +152,9 @@ body {
     background-color: var(--secondary-colour);
     color: #F9F9F9;
     justify-content: center;
-    padding: 3rem;
+    padding: 6%;
     /* height: calc(53rem - var(--nav-bar-height)); */
-    /* gap: 5rem; */
+    gap: 2rem;
     /* top: 15vh; */
     /* position: relative;
     right:0;
