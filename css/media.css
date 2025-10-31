@@ -112,3 +112,139 @@
 }
 
 }
+
+@media(max-width: 41rem ){  /* 650/ 16 = 40.62*/
+    html{
+        font-size: 30%; /* 30/100 *16 = 4.8rem */
+    }
+
+
+    .hero-section {
+        .cta-btn {
+            font-size: var(--font-size-sm);
+            padding: 1rem 0.5rem;
+        }
+    }
+    .features-container {
+        .features-section{
+            grid-template-columns: repeat(2, 40rem);
+            gap: 10rem;
+    }
+}
+
+}
+
+@media(max-width: 41rem ){  /* 604/ 16 = 37.75*/
+    html{
+        font-size: 28%; /* 28/100 *16 = 4.5rem */
+    }
+
+
+    .hero-section {
+        .cta-btn {
+            font-size: var(--font-size-sm);
+            padding: 1rem 0.5rem;
+        }
+    }
+    .features-container {
+        .features-section{
+            grid-template-columns: repeat(1, 70rem);
+            justify-content: center;
+            gap: 45rem;
+            margin-bottom: 30rem;
+    }
+}
+
+}
+
+@media(max-width: 36rem ){  /* 566/ 16 = 35.38*/
+    html{
+        font-size: 23%; /* 23/100 *16 = 3.68rem */
+    }
+
+
+    .hero-section {
+        .cta-btn {
+            font-size: var(--font-size-sm);
+            padding: 1rem 0.5rem;
+        }
+    }
+    .features-container {
+        .features-section{
+            grid-template-columns: repeat(1, 70rem);
+            justify-content: center;
+            gap: 45rem;
+            margin-bottom: 30rem;
+    }
+}
+
+}
+
+@media(max-width: 35rem ){  /* 562/ 16 = 35.37*/
+    html{
+        font-size: 25%; /* 25/100 *16 = 4rem */
+    }
+
+
+    .hero-section {
+        .cta-btn {
+            font-size: var(--font-size-sm);
+            padding: 1rem 0.5rem;
+        }
+    }
+    .features-container {
+        .features-section{
+            grid-template-columns: repeat(1, 70rem);
+            justify-content: center;
+            gap: 45rem;
+            margin-bottom: 30rem;
+    }
+}
+
+}
+
+@media(max-width: 32rem ){  /* 500/ 16 = 31.25*/
+    html{
+        font-size: 21%; /* 21/100 *16 = 3.84rem */
+    }
+
+
+    .hero-section {
+        .cta-btn {
+            font-size: var(--font-size-sm);
+            padding: 1rem 0.5rem;
+        }
+    }
+    .features-container {
+        .features-section{
+            grid-template-columns: repeat(1, 70rem);
+            justify-content: center;
+            gap: 45rem;
+            margin-bottom: 30rem;
+    }
+}
+
+}
+
+@media(max-width: 32rem ){  /* 421/ 16 = 26.31*/
+    html{
+        font-size: 21%; /* 15/100 *16 = 2.4rem */
+    }
+
+
+    .hero-section {
+        .cta-btn {
+            font-size: var(--font-size-sm);
+            padding: 1rem 0.5rem;
+        }
+    }
+    .features-container {
+        .features-section{
+            grid-template-columns: repeat(1, 80rem);
+            justify-content: center;
+            gap: 45rem;
+            margin-bottom: 30rem;
+    }
+}
+
+}
