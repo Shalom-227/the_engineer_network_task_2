@@ -1,24 +1,114 @@
- @media(max-width: 64rem ){  /* 1024 / 16 = 64 */
+ @media(max-width: 79rem ){  /* 1268 / 16 = 79.25 */
     html{
-        font-size: 45%; /* 55/100 *16 = 8.8rem */
+        font-size: 55%; /* 55/100 *16 = 9.6rem */
     }
 
-/* 
-    .nav-bar {
-        max-width: 1000px;
-    } */
 
     .hero-section {
-    max-width: 1200px;
-    justify-content: center;
+    .cta-btn {
+        font-size: var(--font-size-sm);
+        padding: 1rem 0.5rem;
+    }
+}
+ }
+
+
+ @media(max-width: 68rem ){  /* 1092 / 16 = 68.25 */
+    html{
+        font-size: 50%; /* 50/100 *16 = 8rem */
     }
 
-    .hero-image-container {
 
-        margin-left: 7rem;
+    .hero-section {
+    .cta-btn {
+        font-size: var(--font-size-sm);
+        padding: 1rem 0.5rem;
+    }
+}
+ }
+
+ @media(max-width: 63rem ){  /* 1003/ 16 = 62.67 */
+    html{
+        font-size: 45%; /* 45/100 *16 = 7.2rem */
     }
 
 
+    .hero-section {
+    .cta-btn {
+        font-size: var(--font-size-sm);
+        padding: 1rem 0.5rem;
+    }
+}
+ }
 
+
+ @media(max-width: 56rem ){  /* 900/ 16 = 56.25 */
+    html{
+        font-size: 40%; /* 40/100 *16 = 6.4rem */
+    }
+
+
+    .hero-section {
+    .cta-btn {
+        font-size: var(--font-size-sm);
+        padding: 1rem 0.5rem;
+    }
+}
+ }
+
+ @media(max-width: 56rem ){  /* 803/ 16 = 50.18 */
+    html{
+        font-size: 35%; /* 35/100 *16 = 5.6rem */
+    }
+
+
+    .hero-section {
+    .cta-btn {
+        font-size: var(--font-size-sm);
+        padding: 1rem 0.5rem;
+    }
+}
+ }
+
+ @media(max-width: 46rem ){  /* 739/ 16 = 46.19 */
+    html{
+        font-size: 35%; /* 35/100 *16 = 4.8rem */
+    }
+
+
+    .hero-section {
+        .cta-btn {
+            font-size: var(--font-size-sm);
+            padding: 1rem 0.5rem;
+        }
+    }
+    .features-container {
+        .features-section{
+            grid-template-columns: repeat(2, 40rem);
+            gap: 10rem;
+    }
+}
+
+}
+
+
+ @media(max-width: 45rem ){  /* 716/ 16 = 44.75*/
+    html{
+        font-size: 33%; /* 33/100 *16 = 5.3rem */
+    }
+
+
+    .hero-section {
+        .cta-btn {
+            font-size: var(--font-size-sm);
+            padding: 1rem 0.5rem;
+        }
+    }
+    .features-container {
+        .features-section{
+            grid-template-columns: repeat(2, 40rem);
+            gap: 10rem;
+    }
+}
 
 }
