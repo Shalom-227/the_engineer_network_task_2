@@ -267,7 +267,11 @@
             justify-content: center;
             gap: 45rem;
             margin-bottom: 30rem;
+        }
     }
-}
+    .contact-form {
+        
+    }
+
 
 }
