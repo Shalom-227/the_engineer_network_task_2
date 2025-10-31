@@ -1,0 +1,24 @@
+ @media(max-width: 64rem ){  /* 1024 / 16 = 64 */
+    html{
+        font-size: 45%; /* 55/100 *16 = 8.8rem */
+    }
+
+/* 
+    .nav-bar {
+        max-width: 1000px;
+    } */
+
+    .hero-section {
+    max-width: 1200px;
+    justify-content: center;
+    }
+
+    .hero-image-container {
+
+        margin-left: 7rem;
+    }
+
+
+
+
+}

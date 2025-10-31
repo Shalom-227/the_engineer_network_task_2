@@ -349,7 +349,7 @@ body {
 .contact-form {
     background-color: var(--primary-colour);
     color: var(--link-colour);
-    max-width:500px;
+    max-width:800px;
     margin: 0 auto;
     height: 700px;
     font-size: var(--font-size-sm);
@@ -358,7 +358,7 @@ body {
     .contact-heading {
         /* color: var(--link-colour-hover); */
         text-align: center;
-        font-size: var(--font-size-md);
+        font-size: var(--font-size-lg);
         padding: 2rem 1rem;
     }
 
@@ -385,7 +385,7 @@ body {
         padding: 0.5em;
         color: green;
         font-size: 0.6em;
-        width: 25em;
+        width: 700px;
     }
 
     }
