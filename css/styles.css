@@ -347,13 +347,15 @@ body {
 } 
 
 .contact-form {
-    background-color: var(--primary-colour);
-    color: var(--link-colour);
-    max-width:800px;
+    background-color:  #ee9999;
+    color: var(--primary-colour);
+    max-width:70%;
     margin: 0 auto;
-    min-height: 250px;
+    max-height: 70%;
     font-size: var(--font-size-sm);
     margin-bottom: var(--element-spacing-md);
+    padding: 20%;
+    position: relative;
 
     .contact-heading {
         /* color: var(--link-colour-hover); */
