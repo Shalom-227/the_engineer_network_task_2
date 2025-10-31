@@ -80,27 +80,26 @@ html{
 
 
 body {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     font-family: "Poppins", Montserrat;
     color: #F5FFFA;
-    padding: 0 0.5rem;
     position: relative;
 
 }
 
 .nav-bar {
-    max-height: var(--nav-bar-height);
+    /* max-height: var(--nav-bar-height); */
     background-color: var(--primary-colour);
-    max-width: 1200px;
-    width: 95.9%;
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    padding: 2rem;
+    /* position: fixed;
     top:0;
     bottom:0;
-    z-index: 100;
+    z-index: 100; */
 
     .homepage-logo {
         display: block;
@@ -149,16 +148,17 @@ body {
 
 .hero-section {
     display: grid;
-    grid-template-columns: 60rem 60rem;
-    width: 1200px;
+    grid-template-columns: 70rem 50rem;
     background-color: var(--secondary-colour);
     color: #F9F9F9;
-    height: calc(53rem - var(--nav-bar-height));
-    gap: 5rem;
-    top: 15vh;
-    position: relative;
+    justify-content: center;
+    padding: 3rem;
+    /* height: calc(53rem - var(--nav-bar-height)); */
+    /* gap: 5rem; */
+    /* top: 15vh; */
+    /* position: relative;
     right:0;
-    left: 0;
+    left: 0; */
     margin-bottom: var(--element-spacing-lg);
     
     
@@ -166,18 +166,17 @@ body {
         display: grid;
         grid-template-rows: 20rem 15rem 10rem;
         flex-direction: column;
-        max-width: 60rem;
-        position: relative;
+        /* position: relative; */
 
 
         .hero-section-heading {
             font-size: var(--font-size-xxlg);
-            margin-left: 3rem;
+            /* margin-left: 3rem; */
             line-height: 1.5;
-            padding-left: 2rem;
+            /* padding-left: 2rem; */
             align-self: center;
             justify-self: center;
-             color: var(--link-colour);
+            color: var(--link-colour);
 
             .gradient-text{
                 color: var(--link-colour);
@@ -186,28 +185,32 @@ body {
         
         .hero-section-tagline {
             font-size: var(--font-size-md);
-            margin-left: 3rem;
-            padding-left: 3rem;
+            /* margin-left: 3rem; */
+            /* padding-left: 2rem; */
             line-height: 1.5;
             font-style: italic;
-            align-self: center;
-            justify-self: center;
-            position: absolute;
-            top: 18rem;
+            align-self: baseline;
+            /* justify-self: center; */
+            /* position: absolute;
+            top: 18rem; */
         }
         .cta-btn {
-            font-size: var(--font-size-sm);
-            max-width: 30rem;
-            padding: 2rem 0.5rem;
-            margin-left: 6rem;
+            font-size: var(--font-size-lg);
+            
+            padding: 4rem 2rem;
+            align-self: baseline;
+            justify-self: left;
+            text-align: center;
+            /* margin-left: 3rem; */
+            justify-content: baseline;
             margin-bottom: 5rem;
-            border-style: none;
-            border-radius: 20%;
+            /* border-style: none; */
+            /* border-radius: 20%; */
             color: var(--link-colour);
             background-color: var(--tertiary-colour);
             transition: transform 0.3s, filter 0.3s;
-            position: absolute;
-            top: 30rem;
+            /* position: absolute;
+            top: 30rem; */
             
         }   
         .cta-btn:hover {
@@ -221,23 +224,18 @@ body {
 }
 
 .hero-image-container {
-    max-width: 50rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-
-    img {
+.hero-image-container img {
+    display: inline-block;
         width: 95%;
+        height: auto;
         opacity: 0.6;
         mix-blend-mode: screen;
-        position: absolute;
-        top: 3rem;
-        z-index: 3;
-
-    }
-
 }
 
 
@@ -247,7 +245,7 @@ body {
     display: grid;
     margin: 0 auto;
     justify-content: center;
-    margin-bottom: var(--element-spacing-lg);
+    margin-bottom: var(--element-spacing-sm);
 
 
 
@@ -427,7 +425,6 @@ body {
 }
 
 .footer-navigation {
-    height: 45vh;
     background-color: var(--primary-colour);
     display: flex;
     flex-direction: column;
@@ -479,7 +476,6 @@ body {
 
 .social-media .social-media-icon {
     width: 3rem;
-    /* height: 2rem; */
 
 }
 
