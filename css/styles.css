@@ -80,11 +80,10 @@ html{
 
 
 body {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: "Poppins", Montserrat;
     color: #F5FFFA;
-    background-color: #fff;
     padding: 0 0.5rem;
     position: relative;
 
@@ -93,7 +92,8 @@ body {
 .nav-bar {
     max-height: var(--nav-bar-height);
     background-color: var(--primary-colour);
-    width: 99.3%;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -137,11 +137,13 @@ body {
     height: auto;
 }
     .shopping-cart .cart-count {
-        color: var(--tertiary-colour);
+        color: var(--link-colour);
+        background-color: var(--tertiary-colour);
         position: absolute;
         left: 3.3rem;
         bottom: 1.6rem;
-        font-size: var(--font-size-sm)
+        font-size: var(--font-size-sm);
+        padding: 0.5rem
     }
 
 
@@ -150,25 +152,33 @@ body {
     grid-template-columns: 90rem 40rem;
     background-color: var(--secondary-colour);
     color: #F9F9F9;
-    height: calc(70vh - var(--nav-bar-height));
+    height: calc(50vh - var(--nav-bar-height));
     gap: 3rem;
-    margin-top: 15vh;
+    margin-top: 12vh;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
     position: relative;
     right:0;
     left: 0;
     margin-bottom: var(--element-spacing-lg);
+    
 
     
     .hero-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: absolute;
+        bottom: 20rem;
         padding-left: 3rem;
+
 
         .hero-section-heading {
             font-size: var(--font-size-xxlg);
             margin-left: 3rem;
             line-height: 1.5;
+            position: absolute;
+            top: 20rem;
         }
         
         .hero-section-tagline {
@@ -197,6 +207,7 @@ body {
             color: var(--link-colour-hover);
             transform: scale(1.2, 1.2);
             filter: drop-shadow(0.2rem -0.2rem 0.2rem #FFFD74);
+            
 }     
     }
 }
@@ -205,30 +216,34 @@ body {
     width: 30%;
     opacity: 0.8;
     position: absolute;
-    top: 5rem;
+    top: 20rem;
     right: 5.5rem;
     mix-blend-mode: screen;
     z-index: 3;
 }
 
 .features-container {
-    /* background-color: #d8dee7; */
-    max-width: 1200px;
+    
+    max-width: 1000px;
     display: grid;
     margin: 0 auto;
+    justify-content: center;
     margin-bottom: var(--element-spacing-lg);
+
+
 
     .features-heading {
         font-size: var(--font-size-xlg);
         color: var(--primary-colour);
         text-align: center;
-        padding: 4rem 2rem;
+        /* padding: 4rem 2rem; */
     }
     .features-section{
         display: grid;
-        grid-template-columns: repeat(3, 38rem);
+        grid-template-columns: repeat(3, 35rem);
         align-items: center;
-        gap: 8rem;
+        gap: 4rem;
+        margin-bottom: var(--element-spacing-lg);
 
         .features-card {
             /* display: flex; */
@@ -248,7 +263,7 @@ body {
                  border:  solid 0.3rem var(--primary-colour);
                  padding: 0 1rem;
                  padding-top: 2.2rem;
-                 height: 22.5rem; /* set height by largest card text container */
+                 height: 26rem; /* set height by largest card text container */
                  line-height: 1.5;
                  
             }
@@ -257,7 +272,7 @@ body {
                 font-size: var(--font-size-lg);
                 color: var(--secondary-colour);
                 border:  solid 0.3rem var(--primary-colour);
-                height: 8.96rem; /* set height by largest card heading container */
+                height: 12rem; /* set height by largest card heading container */
                 padding: 0.5rem 1rem;
                 text-align: center;
             }
@@ -310,12 +325,15 @@ body {
 
 .contact-form {
     background-color: var(--primary-colour);
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     font-size: var(--font-size-md);
-    margin-bottom: var(--element-spacing-lg);
+    margin: var(--element-spacing-lg);
+
+    /* justify-content: center; */
+    /* align-items: center; */
 
 
     .contact-heading {
@@ -379,9 +397,9 @@ body {
 }
 
 .footer-navigation {
-    height: 40vh;
+    height: 20vh;
     background-color: var(--primary-colour);
-    width: 100%;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -394,7 +412,8 @@ body {
     gap: 4rem;
     list-style: none;
     align-items: center;
-    font-size: var(--font-size-sm);  
+    font-size: var(--font-size-sm);
+    justify-content: center; 
 
 }
 
@@ -428,8 +447,8 @@ body {
 }
 
 .social-media .social-media-icon {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    /* height: 2rem; */
 
 }
 
