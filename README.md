@@ -33,31 +33,65 @@ This project is a modern landing page built to promote ShabNut's natural peanut 
 
 #  Persistence
     - Uses localStorage to remember previous selection. 
-    
-Demo
+
+
 
 Technologies Used
+    - HTML5	(Structure)
+    - CSS3	(Styling and layout, Flexbox & Grid	Responsive layout)
+    - JavaScript	Interactivity and logic
+    - LocalStorage
 
-Installation
+## Installation
 
-Usage
+## Usage
+ - Click nav links to smoothly scroll to sections.
 
-File Structure
+- Use the CTA button to explore products.
 
-Responsive Design
+- Fill out the contact form and submit to see a success message.
 
-Form Validation
+- Add items to cart, edit quantities, or remove them.
 
-Cart Functionality
+- Switch themes and reload to see persistence.
 
-Theme Persistence
+## File Structure
+    
 
-Contact
+##  Responsive Design
+📱 Mobile devices
 
-License
+💻 Tablets
+
+🖥️ Desktops
+
+# Form Validation
+- Ensures all fields are filled before submission
+
+- Displays inline error messages
+
+- Shows success message on valid submission
+
+## Cart Functionality
+
+    - Add to Cart: Select products to add
+
+    - Edit Cart: Modify quantities
+
+    - Remove from Cart: Delete items
+
+    - Cart updates dynamically with JavaScript
+
+
+## Contact
+
+## License
+This project is licensed under the MIT License.
 
 
 
 
+Demo
+![alt text](<assets/images/127.0.0.1_5500_(Nest Hub).png>)
 
 Live Link: https://shalom-227.github.io/the_engineer_network_task_2/
