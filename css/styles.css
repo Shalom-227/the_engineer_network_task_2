@@ -151,7 +151,7 @@ body {
     grid-template-columns: 70rem 50rem;
     background-color: var(--secondary-colour);
     color: #F9F9F9;
-    justify-content: space-around;
+    justify-content: center;
     padding: 6%;
     /* height: calc(53rem - var(--nav-bar-height)); */
     gap: 2rem;
