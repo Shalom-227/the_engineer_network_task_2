@@ -252,7 +252,7 @@
 
 @media(max-width: 25rem ){  /* 375/ 16 = 23.43*/
     html{
-        font-size: 25%; /* 10/100 *16 = 1.6rem */
+        font-size: 25%; /* 25/100 *16 =  */
     }
     
     .nav-links {
@@ -283,9 +283,9 @@
 
             .cta-btn {
                 font-size: var(--font-size-md);
-                padding: 1rem 0.5rem;
+                padding: 2rem 1rem;
                 align-self: center;
-                justify-self: center;
+                justify-self: start;
                 max-width: fit-content;
             }
         }
