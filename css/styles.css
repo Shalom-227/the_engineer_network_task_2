@@ -3,7 +3,7 @@
 ------------------ TYPOGRAPHY ----------------
 FONT SIZES
 scaling factor = 1.25
-1rem (base)/ 1.3rem / 1.7rem / 2.2rem / 2.9rem /  3.7rem / 4.8rem / 6.3rem /
+1rem (base)/ 1.3rem / 1.6rem / 1.9rem / 2.4rem /  3.1rem / 3.8rem / 4.7rem / 5.9rem/ 
 
 FONT WEIGHT
 400/900
@@ -67,6 +67,7 @@ Shade: #6a0000
 --font-size-lg: 3.7rem;
 --font-size-xlg: 4.8rem;
 --font-size-xxlg: 6.3rem;
+--font-size-xxxlg: 7.9rem;
 
 --element-spacing-lg: 30rem;
 --element-spacing-md: 20rem;
@@ -151,7 +152,7 @@ body {
     grid-template-columns: 70rem 50rem;
     background-color: var(--secondary-colour);
     color: #F9F9F9;
-    justify-content: center;
+    justify-content: space-around;
     padding: 6%;
     /* height: calc(53rem - var(--nav-bar-height)); */
     gap: 2rem;
@@ -170,7 +171,7 @@ body {
 
 
         .hero-section-heading {
-            font-size: var(--font-size-xxlg);
+            font-size: var(--font-size-xxxlg);
             /* margin-left: 3rem; */
             line-height: 1.5;
             /* padding-left: 2rem; */
@@ -380,13 +381,14 @@ body {
     .form-datum {
         display: block;
         margin-top: 1em;
+        font-size: 1.5em;
         font-weight: 400;
     }
     
     .form-control {
         padding: 0.5em;
         color: green;
-        font-size: 0.6em;
+        font-size: 1.6em;
         min-width: 100%;
     }
 
@@ -406,10 +408,10 @@ body {
         border-radius: 6px;
         background-color: var(--secondary-colour);
         color:#fefcf7;
-        font-size: 0.8em;
+        font-size: 1.6em;
         position: absolute;
-        bottom: 0.5px;
-        right: 10px;
+        bottom: -22px;
+        right: 2px;
 
     }
 

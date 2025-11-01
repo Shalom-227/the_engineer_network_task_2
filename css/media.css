@@ -1,6 +1,6 @@
  @media(max-width: 79rem ){  /* 1268 / 16 = 79.25 */
     html{
-        font-size: 55%; /* 55/100 *16 = 9.6rem */
+        font-size: 60%; /* 55/100 *16 = 9.6rem */
     }
 
 
@@ -15,7 +15,7 @@
 
  @media(max-width: 68rem ){  /* 1092 / 16 = 68.25 */
     html{
-        font-size: 50%; /* 50/100 *16 = 8rem */
+        font-size: 55%; /* 50/100 *16 = 8rem */
     }
 
 
@@ -252,26 +252,97 @@
 
 @media(max-width: 25rem ){  /* 375/ 16 = 23.43*/
     html{
-        font-size: 10%; /* 10/100 *16 = 1.6rem */
+        font-size: 25%; /* 10/100 *16 = 1.6rem */
     }
     
+    .nav-links {
+        font-size: var(--font-size-md);
+    }
+        
+
     .hero-section {
-        .cta-btn {
-            font-size: var(--font-size-sm);
-            padding: 1rem 0.5rem;
+        display: grid;
+        grid-template-columns: 70rem;
+        justify-content: center;
+        align-items: center;
+
+        .hero-text {
+            display: grid;
+            grid-template-rows: 20rem 15rem 10rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 2rem;
+
+            .hero-section-heading {
+                font-size: var(--font-size-xxlg);
+            }
+            .hero-section-tagline {
+                font-size: var(--font-size-lg);
+            }
+
+            .cta-btn {
+                font-size: var(--font-size-md);
+                padding: 1rem 0.5rem;
+                align-self: center;
+                justify-self: center;
+                max-width: fit-content;
+            }
         }
     }
+    .hero-image-container img {
+        display: none;
+        }
+
     .features-container {
+        
         .features-section{
             grid-template-columns: repeat(1, 80rem);
             justify-content: center;
             gap: 45rem;
             margin-bottom: 30rem;
+
+            .features-section{
+                .card-text {
+                    font-size: var(--font-size-lg);
+                }
+                .card-heading {
+                font-size: var(--font-size-xlg);
+                }
+                .price-quantity {
+                    grid-template-columns: 20rem 20rem;
+                    font-size: var(--font-size-lg);
+                    height: 11rem;
+                }
+                 .card-price {
+                    font-size: var(--font-size-xlg);
+                 }
+                  .card-buttons {
+                    .quantity {
+                    font-size: var(--font-size-xlg);
+                }
+
+                  }
+                  .card-buttons img {
+                    width: var(--font-size-xlg);
+                
+            }
+
+            }
         }
     }
-    .contact-form {
         
+    .contact-form {
+        max-width:100%;
+         .contact-heading {
+            font-size: var(--font-size-lg);
+         }
+         .form-title {
+        font-size: 1.5em;
+         }
     }
 
-
+    .footer-links {
+        font-size: var(--font-size-md);
+    }
 }
