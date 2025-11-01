@@ -149,7 +149,7 @@ body {
 
 .hero-section {
     display: grid;
-    grid-template-columns: 70rem 50rem;
+    grid-template-columns: repeat(2, 1fr);
     background-color: var(--secondary-colour);
     color: #F9F9F9;
     justify-content: space-around;
@@ -171,7 +171,7 @@ body {
 
 
         .hero-section-heading {
-            font-size: var(--font-size-xxxlg);
+            font-size: var(--font-size-xxlg);
             /* margin-left: 3rem; */
             line-height: 1.5;
             /* padding-left: 2rem; */
@@ -410,8 +410,8 @@ body {
         color:#fefcf7;
         font-size: 1.6em;
         position: absolute;
-        bottom: -22px;
-        right: 2px;
+        bottom: -30px;
+        right: 0;
 
     }
 
